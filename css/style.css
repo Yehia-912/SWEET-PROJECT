@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#main {
+  background-color: #f0f0f0;
+  min-height: 100dvh;
+}
+@media (min-width: 768px) AND (max-width: 992px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 750px;
+  }
+}
+#main .buttons button {
+  font-size: 13px;
+}
+#main p {
+  color: rgb(119, 119, 119);
+  font-size: 15px;
+  font-weight: 500;
+}
+#main .under-buttons {
+  min-height: 543.011px;
+}
+@media (min-width: 768px) AND (max-width: 992px) {
+  #main .under-buttons {
+    min-height: 450px;
+  }
+}
+#main .img-container {
+  right: 0;
+}
+
+#main .img-container::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 15%;
+  width: 70%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  filter: blur(12px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-filter: blur(12px);
+}
+.sec-one.active,
+#main .buttons button:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(30 30 28) 0%,
+    rgb(187 187 187) 100%
+  );
+  /* color: white; */
+}
