@@ -34,8 +34,17 @@
 }
 #main .img-container {
   right: 0;
+  position: absolute;
 }
-
+@media (max-width: 768px){
+  #main .img-container {
+  /* top:  543.011px !important; */
+  position: relative;
+}
+#main {
+  min-height: 160dvh;
+}
+}
 #main .img-container::before {
   content: "";
   position: absolute;
